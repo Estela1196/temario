@@ -1,0 +1,44 @@
+{% extends 'todo/layout.html' %}
+
+{% block body %}
+	
+	<h1>Temario Unidad 1 Programacion 2</h1>
+	<ul>
+	{% for tema in temas %}
+		<li>{{tema}}</li>
+	{% endfor %}
+	</ul>
+	
+	<li><a href="{% url 'add' %}">1. Fundamentos del lenguaje</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub1' %}">1.1 Programacion orientada a eventos</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub2' %}">1.2 Objetos,controles y componentes</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub3' %}">1.3 Tecnologias NET.</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub4' %}">1.4 Entorno integrado de desarrollo</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub5' %}">1.5 Tipos de proyectos</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub6' %}">1.6 Espacios de nombres</li></a>
+	
+	<li></li>
+	
+	<li><a href="{% url 'sub7' %}">1.7 Estructuras propias del lenguaje:</li></a>
+	
+
+	
+{% endblock %}
